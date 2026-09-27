@@ -44,4 +44,4 @@ chamados e padronizar o processo de triagem.
 
 Trello
 
-**Autor:** [seu nome aqui]
+**Autor:** [Leandro]
