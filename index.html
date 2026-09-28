@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kanban público simulado para gestão ágil de melhorias em atendimento e suporte.">
+  <title>Kanban de Melhoria de Atendimento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">✓</div>
+      <div>
+        <h1>Kanban de Melhoria de Atendimento</h1>
+        <p>Simulação de gestão ágil para um time de suporte</p>
+      </div>
+    </div>
+    <div class="top-actions">
+      <span class="status-dot"></span>
+      <span>Board público • atualizado hoje</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="eyebrow">PROJETO DE PORTFÓLIO</span>
+        <h2>Transformando problemas de atendimento em ações mensuráveis.</h2>
+        <p>Um quadro Kanban simulado para priorizar incidentes, melhorias de processo e ações de experiência do cliente.</p>
+      </div>
+      <div class="hero-badge">
+        <strong id="completionRate">0%</strong>
+        <span>concluído</span>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Indicadores do board">
+      <article class="metric">
+        <span class="metric-label">Itens no fluxo</span>
+        <strong id="totalItems">0</strong>
+        <small>tarefas monitoradas</small>
+      </article>
+      <article class="metric">
+        <span class="metric-label">Alta prioridade</span>
+        <strong id="highPriority">0</strong>
+        <small>atenção imediata</small>
+      </article>
+      <article class="metric">
+        <span class="metric-label">Em andamento</span>
+        <strong id="inProgress">0</strong>
+        <small>trabalho ativo</small>
+      </article>
+      <article class="metric">
+        <span class="metric-label">Tempo médio</span>
+        <strong>2,4d</strong>
+        <small>estimativa do fluxo</small>
+      </article>
+    </section>
+
+    <section class="toolbar" aria-label="Filtros do board">
+      <div class="search-wrap">
+        <span>⌕</span>
+        <input id="searchInput" type="search" placeholder="Buscar por tarefa, responsável ou tag..." aria-label="Buscar cards">
+      </div>
+      <div class="filters">
+        <button class="filter active" data-filter="all">Todos</button>
+        <button class="filter" data-filter="high">Alta prioridade</button>
+        <button class="filter" data-filter="qa">QA</button>
+        <button class="filter" data-filter="suporte">Suporte</button>
+      </div>
+      <button class="reset-btn" id="resetBoard">Restaurar board</button>
+    </section>
+
+    <section class="board" id="board">
+      <div class="column" data-status="backlog">
+        <div class="column-header">
+          <div><span class="column-dot backlog-dot"></span><h3>Backlog</h3></div>
+          <span class="count" id="count-backlog">0</span>
+        </div>
+        <div class="cards" data-dropzone="backlog"></div>
+      </div>
+
+      <div class="column" data-status="todo">
+        <div class="column-header">
+          <div><span class="column-dot todo-dot"></span><h3>A Fazer</h3></div>
+          <span class="count" id="count-todo">0</span>
+        </div>
+        <div class="cards" data-dropzone="todo"></div>
+      </div>
+
+      <div class="column" data-status="doing">
+        <div class="column-header">
+          <div><span class="column-dot doing-dot"></span><h3>Em Andamento</h3></div>
+          <span class="count" id="count-doing">0</span>
+        </div>
+        <div class="cards" data-dropzone="doing"></div>
+      </div>
+
+      <div class="column" data-status="done">
+        <div class="column-header">
+          <div><span class="column-dot done-dot"></span><h3>Concluído</h3></div>
+          <span class="count" id="count-done">0</span>
+        </div>
+        <div class="cards" data-dropzone="done"></div>
+      </div>
+    </section>
+
+    <section class="methodology">
+      <div>
+        <span class="eyebrow">COMO FOI PENSADO</span>
+        <h2>Fluxo simples, foco em impacto</h2>
+      </div>
+      <div class="method-grid">
+        <div><strong>1. Identificar</strong><p>Registrar reclamações, gargalos e oportunidades observadas no atendimento.</p></div>
+        <div><strong>2. Priorizar</strong><p>Usar impacto no cliente e urgência para decidir o que entra primeiro no fluxo.</p></div>
+        <div><strong>3. Executar</strong><p>Limitar tarefas em andamento e acompanhar responsáveis e prazos.</p></div>
+        <div><strong>4. Validar</strong><p>Testar a melhoria, documentar o resultado e mover para concluído.</p></div>
+      </div>
+    </section>
+
+    <footer>
+      <span>Projeto demonstrativo • Portfólio de Tecnologia</span>
+      <span>HTML • CSS • JavaScript • Kanban • Gestão de suporte</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

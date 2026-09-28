@@ -1,182 +1,65 @@
 # 📋 Kanban de Melhoria de Atendimento
 
-> Projeto simulando a gestão ágil de melhorias em um time de suporte técnico.
+Board público simulado para demonstrar **gestão ágil aplicada a um time de suporte**.
 
-## 🎯 Sobre o projeto
+## 🎯 Objetivo
 
-Este projeto simula o gerenciamento de um fluxo de melhorias para uma equipe de Help Desk / Suporte Técnico.
+O projeto simula a organização de um backlog de melhorias de atendimento, mostrando como problemas operacionais podem ser transformados em tarefas, priorizados e acompanhados até a conclusão.
 
-O cenário proposto parte de um problema comum em operações de atendimento:
+A ideia é demonstrar conhecimentos de:
 
-- alto tempo de triagem;
-- falta de padronização nas respostas;
-- dificuldade para priorizar chamados;
-- necessidade de melhorar o acompanhamento de SLA;
-- atividades repetitivas que podem ser automatizadas.
+- Gestão de chamados e processos
+- Priorização por impacto e urgência
+- Kanban e fluxo de trabalho
+- QA e validação de mudanças
+- Indicadores de suporte (SLA, CSAT, backlog)
+- Organização e documentação
+- HTML, CSS e JavaScript
 
-A proposta é transformar esses problemas em tarefas organizadas em um fluxo Kanban, acompanhando cada item desde a identificação até a conclusão.
+## 🧩 Funcionalidades
 
----
+- Quadro com **Backlog → A Fazer → Em Andamento → Concluído**
+- Cards com prioridade, responsável, prazo e tags
+- Busca por tarefa, responsável ou categoria
+- Filtros por prioridade e área
+- Arrastar e soltar cards entre colunas
+- Indicadores automáticos do board
+- Persistência das movimentações usando `localStorage`
+- Layout responsivo para desktop e celular
+- Pronto para publicação no **GitHub Pages**
 
-## 🧩 Problema simulado
+## 🗂️ Cenário simulado
 
-Uma empresa fictícia identificou que sua equipe de suporte apresenta:
+O board representa um time de suporte que identificou oportunidades para:
 
-- demora na triagem inicial dos chamados;
-- respostas diferentes para problemas semelhantes;
-- dificuldade para identificar prioridades;
-- falta de documentação de processos;
-- pouca visibilidade sobre indicadores de atendimento.
+1. Reduzir o tempo de primeira resposta.
+2. Padronizar respostas para dúvidas recorrentes.
+3. Melhorar a triagem de chamados N1.
+4. Validar alterações antes da publicação.
+5. Acompanhar SLA, volume e satisfação.
+6. Automatizar atividades repetitivas.
 
-### Objetivo da melhoria
+## 🚀 Como publicar no GitHub Pages
 
-Organizar um fluxo de trabalho que permita:
+1. Crie um repositório público no GitHub, por exemplo:
+   `kanban-melhoria-atendimento`
+2. Envie `index.html`, `style.css` e `script.js`.
+3. Vá em **Settings → Pages**.
+4. Em **Build and deployment**, selecione:
+   - Source: `Deploy from a branch`
+   - Branch: `main`
+   - Folder: `/ (root)`
+5. Salve e aguarde o GitHub gerar o endereço público.
 
-**Identificar → Priorizar → Executar → Validar → Concluir**
+## 💼 Como apresentar no portfólio
 
-O projeto utiliza uma sprint simulada de duas semanas para acompanhar as melhorias propostas.
+**Nome do projeto:** Kanban de Melhoria de Atendimento
 
----
+**Descrição curta:**
+> Board Kanban interativo que simula a gestão ágil de melhorias em um time de suporte, com priorização, acompanhamento de tarefas, indicadores e fluxo de QA.
 
-## 📌 Workflow
+**Tecnologias:** HTML5 • CSS3 • JavaScript • GitHub Pages
 
-O fluxo utilizado é:
+## 📌 Observação
 
-| Etapa | Objetivo |
-|---|---|
-| 📥 Backlog | Registrar problemas e oportunidades identificadas |
-| 📝 A Fazer | Itens priorizados para execução |
-| 🔧 Em Andamento | Tarefas atualmente sendo executadas |
-| 🧪 Em Revisão/Teste | Validação da solução antes da conclusão |
-| ✅ Concluído | Melhorias validadas e finalizadas |
-
----
-
-## 🚦 Critério de prioridade
-
-As tarefas são classificadas de acordo com impacto e urgência:
-
-| Prioridade | Critério |
-|---|---|
-| 🔴 Crítica | Impacta o funcionamento do time ou impede o atendimento |
-| 🟠 Alta | Impacta diretamente um processo ou grupo de usuários |
-| 🟡 Média | Melhoria relevante, mas sem impacto imediato |
-| 🟢 Baixa | Melhoria contínua ou otimização futura |
-
----
-
-## 🏃 Sprint simulada
-
-**Sprint:** 01/09 → 14/09
-
-**Meta:**
-
-> Reduzir em 20% o tempo médio de triagem dos chamados.
-
-Durante a sprint, as tarefas são priorizadas e movimentadas pelo workflow conforme seu andamento.
-
-Ao final do ciclo, é feita uma comparação entre:
-
-- tarefas planejadas;
-- tarefas concluídas;
-- tarefas em andamento;
-- tarefas que permaneceram no backlog.
-
----
-
-## 🗂️ Exemplos de tarefas
-
-### 🔴 Alta prioridade
-
-**Criar checklist de triagem N1**
-
-Definir perguntas e verificações mínimas antes de encaminhar um chamado para o nível N2.
-
-### 🟠 Alta prioridade
-
-**Padronizar respostas para dúvidas recorrentes**
-
-Criar uma base de respostas para os principais problemas identificados no atendimento.
-
-### 🟡 Média prioridade
-
-**Mapear principais motivos de contato**
-
-Classificar os chamados dos últimos 30 dias por categoria, volume e impacto.
-
-### 🟢 Baixa prioridade
-
-**Revisar pesquisa de satisfação**
-
-Avaliar o fluxo de coleta de feedback após o atendimento e possíveis melhorias no CSAT.
-
----
-
-## 📊 Indicadores acompanhados
-
-O projeto utiliza indicadores comuns em operações de suporte:
-
-- Tempo médio de triagem;
-- Tempo médio de atendimento;
-- SLA;
-- Volume de chamados;
-- Backlog;
-- CSAT;
-- Quantidade de tarefas concluídas.
-
----
-
-## 🛠️ Ferramentas
-
-- **Trello** — gerenciamento visual do Kanban
-- **GitHub** — documentação e versionamento
-- **Kanban** — organização do fluxo de trabalho
-- **QA** — validação das melhorias antes da conclusão
-- **RPA / Automação** — identificação de tarefas repetitivas que podem ser automatizadas
-
----
-
-## 🔗 Board público
-
-👉 **[Acessar o Board no Trello](COLE_AQUI_O_LINK_DO_TRELLO)**
-
-O board contém as colunas, prioridades, tarefas e sprint utilizadas na simulação.
-
----
-
-## 💡 O que este projeto demonstra
-
-Este projeto foi desenvolvido para demonstrar conhecimentos práticos em:
-
-- Gestão de fluxo Kanban;
-- Organização e priorização de tarefas;
-- Processos de Help Desk;
-- Triagem de chamados;
-- Gestão de SLA;
-- Documentação de processos;
-- QA e validação;
-- Identificação de oportunidades de automação;
-- Organização de sprint;
-- Acompanhamento de indicadores.
-
----
-
-## 📈 Possíveis melhorias futuras
-
-Algumas evoluções que poderiam ser adicionadas ao projeto:
-
-- Dashboard de indicadores;
-- Cálculo automático de SLA;
-- Gráfico de evolução da sprint;
-- Classificação automática de chamados;
-- Automação da triagem utilizando RPA;
-- Integração com sistema de tickets;
-- Relatório de desempenho da sprint.
-
----
-
-## 👤 Autor
-
-**Leandro**
-
-Projeto desenvolvido para portfólio profissional.
+Este é um projeto demonstrativo. Os chamados, responsáveis, prazos e indicadores são fictícios e foram criados para representar um cenário realista de operação de suporte.
