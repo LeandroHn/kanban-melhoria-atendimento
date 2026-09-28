@@ -38,26 +38,7 @@ O board representa um time de suporte que identificou oportunidades para:
 4. Validar alterações antes da publicação.
 5. Acompanhar SLA, volume e satisfação.
 6. Automatizar atividades repetitivas.
-
-## 🚀 Como publicar no GitHub Pages
-
-1. Crie um repositório público no GitHub, por exemplo:
-   `kanban-melhoria-atendimento`
-2. Envie `index.html`, `style.css` e `script.js`.
-3. Vá em **Settings → Pages**.
-4. Em **Build and deployment**, selecione:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/ (root)`
-5. Salve e aguarde o GitHub gerar o endereço público.
-
-## 💼 Como apresentar no portfólio
-
-**Nome do projeto:** Kanban de Melhoria de Atendimento
-
-**Descrição curta:**
-> Board Kanban interativo que simula a gestão ágil de melhorias em um time de suporte, com priorização, acompanhamento de tarefas, indicadores e fluxo de QA.
-
+7. 
 **Tecnologias:** HTML5 • CSS3 • JavaScript • GitHub Pages
 
 ## 📌 Observação
