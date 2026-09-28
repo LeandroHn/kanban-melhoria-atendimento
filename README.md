@@ -39,7 +39,7 @@ O board representa um time de suporte que identificou oportunidades para:
 5. Acompanhar SLA, volume e satisfação.
 6. Automatizar atividades repetitivas.
 7. 
-**Tecnologias:** HTML5 • CSS3 • JavaScript • GitHub Pages
+**Tecnologias:** HTML5 • CSS3 • JavaScript • GitHub Pages: https://leandrohn.github.io/kanban-melhoria-atendimento/
 
 ## 📌 Observação
 
